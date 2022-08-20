@@ -20,11 +20,12 @@ const Registration = () => {
                 sex:"",
                 id:"",
                 govtId:"",
-                
+                gurdian:"",
             }} onSubmit={fromdata}>
     
             <Form>
                 <div>
+                <div className='flex gap-4'>
                     <div>
                     <label>Name *</label>
                 <Field className="input"
@@ -60,6 +61,18 @@ const Registration = () => {
                 </Field>
                 <Field className="input" placeholder="Enter Govt Id" name="govtId" type ="text"></Field>
                     </div>
+                </div>
+                {/* Contact Details */}
+
+                <div>
+                   <label>Gurdian Details</label> 
+                   <Field className="input"  name="gurdian" as ="select">
+                    <option value='Mother'>Mother</option>
+                    <option value='Father'>Father</option>
+                    <option value='Sister'>Sister</option>
+                </Field>
+                </div>
+
                 </div>
                 <br/>
                 <br/>
